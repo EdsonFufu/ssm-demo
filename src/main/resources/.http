@@ -1,0 +1,29 @@
+POST http://localhost:8080/createOrder
+Content-Type: application/json
+
+{
+  "paymentType": "CASH_ON_DELIVERY"
+}
+###
+POST http://localhost:8080/orderPay
+Content-Type: application/json
+
+{
+  "id":  11
+}
+
+###
+POST http://localhost:8080/orderFulfill
+Content-Type: application/json
+
+{
+  "id": 10
+}
+
+###
+POST http://localhost:8080/orderCancel
+Content-Type: application/json
+
+{
+  "id": 11
+}

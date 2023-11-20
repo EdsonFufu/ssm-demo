@@ -1,0 +1,25 @@
+POST http://localhost:8080/invoice/request
+Content-Type: application/json
+
+{
+  "sender": "Edson Fufu",
+  "receiver": "Jacklin Edson",
+  "amount": "30000000"
+}
+###
+POST http://localhost:8080/invoice/screen/2
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8080/invoice/confirm/1
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8080/invoice/cancel/4
+Content-Type: application/json
+
+{}
